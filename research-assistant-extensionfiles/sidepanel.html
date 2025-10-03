@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Assistant</title>
+  <link rel="stylesheet" href="sidepanel.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="header-content">
+        <div class="logo">
+          <i class="fas fa-search-plus"></i>
+          <h1>Research Assistant</h1>
+        </div>
+        <div class="header-subtitle">AI-Powered Research Tool</div>
+      </div>
+      <button id="themeToggle" class="theme-toggle" title="Toggle dark/light mode">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+    </header>
+
+    <main class="main-content">
+      <section class="action-section">
+        <div class="section-header">
+          <i class="fas fa-magic"></i>
+          <h3>Quick Actions</h3>
+        </div>
+        <button id="summarizeBtn" class="primary-btn">
+          <i class="fas fa-file-text"></i>
+          <span>Summarize Text</span>
+        </button>
+      </section>
+
+      <section class="notes-section">
+        <div class="section-header">
+          <i class="fas fa-sticky-note"></i>
+          <h3>Research Notes</h3>
+        </div>
+        <div class="notes-container">
+          <textarea id="notes" placeholder="Take your research notes here..."></textarea>
+          <button id="saveNotesBtn" class="secondary-btn">
+            <i class="fas fa-save"></i>
+            <span>Save Notes</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="results-section">
+        <div id="results"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
